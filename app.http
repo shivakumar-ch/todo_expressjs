@@ -1,0 +1,30 @@
+GET http://localhost:3000/todos/3
+
+###
+GET http://localhost:3000/agenda/?date=2021-2-22
+
+###
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
+###
+POST http://localhost:3000/todos/
+content-type:application/json
+
+{
+  "id": 17,
+  "todo": "Render Cart Page",
+  "priority": "MEDIUM",
+  "status": "IN PROGRESS",
+  "category": "LEARNING",
+  "dueDate": "2021-02-23"
+}
+###
+PUT http://localhost:3000/todos/16
+content-type:application/json
+
+{
+  "dueDate": "2021-03-23"
+}
+
+###
+
+DELETE http://localhost:3000/todos/16
